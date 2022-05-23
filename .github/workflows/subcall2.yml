@@ -12,5 +12,6 @@ jobs:
     steps:
       - name: "Say Hello Shashank it's Monday"
         run: echo "$Greeting $First_Name. Today is $DAY_OF_WEEK!"
+        shell: pwsh
         env:
           First_Name: Shashank
