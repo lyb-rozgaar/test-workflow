@@ -6,7 +6,8 @@ on:
 #     - master
 jobs:
   call1:
-    uses: lyb-rozgaar/test-workflow/.github/workflows/subcall1.yml@main
+    uses: lyb-rozgaar/test-workflow2/.github/workflows/caller.yml@main
+    secrets: inherit
   call2:
     needs: call1
     uses: lyb-rozgaar/test-workflow/.github/workflows/subcall2.yml@main
